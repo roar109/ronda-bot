@@ -3,6 +3,7 @@
     "channelName": "channel",
     "channelId": "",
     "sendMessageSlackURL": "https://slack.com/api/chat.postMessage?token=",
+    "usersByChannelURL":"",
     "botName": "Ronda",
 
     "officeHours": {
