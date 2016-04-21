@@ -1,0 +1,64 @@
+{
+    "teamDomain": "domain",
+    "channelName": "channel",
+    "channelId": "",
+    "sendMessageSlackURL": "https://slack.com/api/chat.postMessage?token=",
+    "botName": "Ronda",
+
+    "officeHours": {
+        "on": true,
+        "begin": 11,
+        "end": 19
+    },
+
+    "debug": false,
+
+    "callouts": {
+        "timeBetween": {
+            "minTime": 1,
+            "maxTime": 5,
+            "units": "minutes"
+        },
+        "numPeople": 2,
+        "slidingWindowSize": 8,
+        "groupCalloutChance": 0.02
+    },
+
+    "exercises": [{
+        "id": 0,
+        "name": "pushups",
+        "minReps": 15,
+        "maxReps": 20,
+        "units": "rep"
+    }, {
+        "id": 1,
+        "name": "planks",
+        "minReps": 40,
+        "maxReps": 60,
+        "units": "second"
+    }, {
+        "id": 2,
+        "name": "wall sit",
+        "minReps": 40,
+        "maxReps": 50,
+        "units": "second"
+    }, {
+        "id": 3,
+        "name": "chair dips",
+        "minReps": 15,
+        "maxReps": 30,
+        "units": "rep"
+    }, {
+        "id": 4,
+        "name": "calf raises",
+        "minReps": 20,
+        "maxReps": 30,
+        "units": "rep"
+    }, {
+        "id": 6,
+        "name": "Burpees",
+        "minReps": 2,
+        "maxReps": 10,
+        "units": "rep"
+    }]
+}
