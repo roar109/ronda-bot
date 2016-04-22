@@ -1,15 +1,16 @@
 {
     "teamDomain": "domain",
     "channelName": "channel",
-    "channelId": "",
+    "channelId": "channel",
     "sendMessageSlackURL": "https://slack.com/api/chat.postMessage?token=",
-    "usersByChannelURL":"",
+    "channelInfoURL":"https://slack.com/api/channels.info?token={token}&channel={channelId}&pretty=1",
+    "userInfoURL":"https://slack.com/api/users.info?token={token}&user={userId}&pretty=1",
     "botName": "Ronda",
 
     "officeHours": {
         "on": true,
         "begin": 11,
-        "end": 19
+        "end": 20
     },
 
     "debug": false,
