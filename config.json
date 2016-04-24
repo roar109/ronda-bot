@@ -1,8 +1,7 @@
 {
-    "teamDomain": "domain",
-    "channelName": "channel",
-    "channelId": "channel",
-    "sendMessageSlackURL": "https://slack.com/api/chat.postMessage?token=",
+    "teamDomain": "",
+    "channelId": "",
+    "sendMessageSlackURL": "https://slack.com/api/chat.postMessage?token={token}&link_names=1&channel={channelId}&username={botName}&text={message}",
     "channelInfoURL":"https://slack.com/api/channels.info?token={token}&channel={channelId}&pretty=1",
     "userInfoURL":"https://slack.com/api/users.info?token={token}&user={userId}&pretty=1",
     "botName": "Ronda",
@@ -10,19 +9,18 @@
     "officeHours": {
         "on": true,
         "begin": 11,
-        "end": 20
+        "end": 24
     },
 
-    "debug": false,
+    "debug": true,
 
     "callouts": {
         "timeBetween": {
             "minTime": 1,
-            "maxTime": 5,
+            "maxTime": 3,
             "units": "minutes"
         },
         "numPeople": 2,
-        "slidingWindowSize": 8,
         "groupCalloutChance": 0.02
     },
 

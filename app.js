@@ -10,7 +10,7 @@ ExerciseHandler.loadConfig(config);
 CalloutHandler.loadConfig(config);
 
 UserDelegate.loadUsersFromChannel(function(){
-  console.log("Loaded "+UserDelegate.userCache.length+" users");
+  console.log("Loaded "+UserDelegate.userCache.length+" users from channel");
   main();
 });
 
@@ -20,6 +20,7 @@ function main(){
     ExerciseHandler.addCalloutHandler(CalloutHandler);
     ExerciseHandler.callAssignExcercise = function(excercise){
         ExerciseHandler.assignExercise(excercise, UserDelegate);
+        setTimeout(main,0);
     };
     ExerciseHandler.selectExerciseAndStartTime();
   }else{
