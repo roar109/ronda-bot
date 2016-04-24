@@ -8,6 +8,7 @@ TimeHandler.loadConfig(config);
 UserDelegate.loadConfig(config);
 ExerciseHandler.loadConfig(config);
 CalloutHandler.loadConfig(config);
+ExerciseHandler.addCalloutHandler(CalloutHandler);
 
 UserDelegate.loadUsersFromChannel(function(){
   console.log("Loaded "+UserDelegate.userCache.length+" users from channel");
@@ -17,7 +18,6 @@ UserDelegate.loadUsersFromChannel(function(){
 function main(){
   if(TimeHandler.isWorkingTime()){
     console.log("Working Time");
-    ExerciseHandler.addCalloutHandler(CalloutHandler);
     ExerciseHandler.callAssignExcercise = function(excercise){
         ExerciseHandler.assignExercise(excercise, UserDelegate);
         setTimeout(main,0);
