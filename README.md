@@ -1,5 +1,6 @@
 # ronda-bot
 
-npm install
+Make a copy of `default.json` and name it `config.json` and put the correct channel ID on it
 
-node app.js
+    npm install
+    node app.js
