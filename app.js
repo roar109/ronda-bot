@@ -12,6 +12,7 @@ ExerciseHandler.addCalloutHandler(CalloutHandler);
 
 UserDelegate.loadUsersFromChannel(function(){
   console.log("Loaded "+UserDelegate.userCache.length+" users from channel");
+  CalloutHandler.call("Ready to rumble?!");
   main();
 });
 
