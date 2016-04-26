@@ -7,20 +7,19 @@
 
     "officeHours": {
         "on": true,
-        "begin": 11,
-        "end": 20
+        "begin": 9,
+        "end": 5
     },
 
     "debug": true,
 
     "callouts": {
         "timeBetween": {
-            "minTime": 1,
-            "maxTime": 4,
-            "units": "minutes"
+            "minTime": 20,
+            "maxTime": 45
         },
         "numPeople": 2,
-        "groupCalloutChance": 0.02
+        "groupCalloutChance": 0.1
     },
 
     "exercises": [{
@@ -55,7 +54,7 @@
         "units": "rep"
     }, {
         "id": 6,
-        "name": "Burpees",
+        "name": "burpees",
         "minReps": 2,
         "maxReps": 10,
         "units": "rep"

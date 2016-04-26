@@ -18,7 +18,6 @@ UserDelegate.loadUsersFromChannel(function(){
 
 function main(){
   if(TimeHandler.isWorkingTime()){
-    console.log("Working Time");
     ExerciseHandler.callAssignExcercise = function(excercise){
         ExerciseHandler.assignExercise(excercise, UserDelegate);
         setTimeout(main,0);
