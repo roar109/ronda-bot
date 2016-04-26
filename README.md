@@ -19,3 +19,6 @@ Install dependencies:
 run
 
     node app.js
+
+
+Based on [https://github.com/brandonshin/slackbot-workout](https://github.com/brandonshin/slackbot-workout "slackbot-workout")
