@@ -1,5 +1,4 @@
 {
-    "teamDomain": "",
     "channelId": "",
     "sendMessageSlackURL": "https://slack.com/api/chat.postMessage?token={token}&link_names=1&channel={channelId}&username={botName}&text={message}",
     "channelInfoURL":"https://slack.com/api/channels.info?token={token}&channel={channelId}&pretty=1",
@@ -9,7 +8,7 @@
     "officeHours": {
         "on": true,
         "begin": 11,
-        "end": 24
+        "end": 20
     },
 
     "debug": true,
@@ -17,7 +16,7 @@
     "callouts": {
         "timeBetween": {
             "minTime": 1,
-            "maxTime": 3,
+            "maxTime": 4,
             "units": "minutes"
         },
         "numPeople": 2,
